@@ -35,7 +35,7 @@ export default function HeroBanner() {
           the bar below).
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
-          <Button size="lg" onClick={() => navigate("/create-launchpad")} className="min-w-[200px]">
+          <Button size="lg" onClick={() => navigate("/create")} className="min-w-[200px]">
             Launch a presale
             <ArrowRight className="size-4" />
           </Button>

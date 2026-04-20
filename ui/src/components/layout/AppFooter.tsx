@@ -22,7 +22,7 @@ export default function AppFooter() {
             <a className="hover:text-primary" href="https://docs.fhenix.io/" target="_blank" rel="noopener noreferrer">
               Fhenix
             </a>
-            <Link className="hover:text-primary" to="/create-launchpad">
+            <Link className="hover:text-primary" to="/create">
               New presale
             </Link>
             <button

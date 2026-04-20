@@ -16,14 +16,16 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-stone-200/80 bg-[oklch(0.97_0.012_85/0.85)] backdrop-blur-md">
       <div className="max-w-320 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between gap-4">
-          <Link to="/" className="flex items-center gap-3 text-stone-900">
+          <Link to="/home" className="flex items-center gap-3 text-stone-900">
             <img src="/icon.png" alt="" width={36} height={36} className="size-9 rounded-2xl shadow-sm ring-2 ring-white" />
             <span className="font-display text-lg font-semibold tracking-tight">pvtsale</span>
           </Link>
 
           <nav className="hidden items-center gap-1 md:flex">
             {navConfig.map((item) => {
-              const isActive = pathname === item.href;
+              const isActive =
+                pathname === item.href ||
+                (item.href === "/create" && pathname === "/create-launchpad");
               return (
                 <Link
                   key={item.id}

@@ -11,7 +11,7 @@ export const navConfig: TNavConfig[] = [
   {
     id: "home",
     label: "Home",
-    href: "/",
+    href: "/home",
     Icon: Home,
   },
   {
@@ -35,7 +35,7 @@ export const navConfig: TNavConfig[] = [
   {
     id: "create-launchpad",
     label: "Create presale",
-    href: "/create-launchpad",
+    href: "/create",
     Icon: Rocket,
   },
 ];
