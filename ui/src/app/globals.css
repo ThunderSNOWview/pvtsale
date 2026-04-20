@@ -1,0 +1,351 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@font-face {
+  font-family: Telegraf;
+  src:
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/62447937128c320434962155_Telegraf-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/6244793901b1dbeffba6d9e1_Telegraf-UltraBold.woff2")
+      format("woff2"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/624479376b7fd15975825c63_Telegraf-Bold.eot")
+      format("embedded-opentype"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/6244793863584f01f756c521_Telegraf-UltraBold.eot")
+      format("embedded-opentype"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/62447937a5e576e440057bd2_Telegraf-Bold.woff")
+      format("woff"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/6244793963584fd0b856c522_Telegraf-UltraBold.woff")
+      format("woff"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/624479389ec65dbd0d369816_Telegraf-Bold.ttf")
+      format("truetype"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/62204b25c218fde64f3074bd_Telegraf-UltraBold.ttf")
+      format("truetype"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/622027eab98e1c90ade74761_Telegraf-Bold.otf")
+      format("opentype"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/6220313f5f1957743a5b0352_Telegraf-UltraBold.otf")
+      format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Telegraf;
+  src:
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/624479377d87a1bf2cce9f64_Telegraf-Black.woff2")
+      format("woff2"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/62447937e8505d0c4cc3ab9b_Telegraf-Black.eot")
+      format("embedded-opentype"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/6244793707a53a7239ab9d50_Telegraf-Black.woff")
+      format("woff"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/622027eacb81f32431e4b1b6_Telegraf-Black.ttf")
+      format("truetype"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/62447937457a867b044a3005_Telegraf-Black.otf")
+      format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Telegraf;
+  src:
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/62447938a00fa41d8d35c608_Telegraf-Light.woff2")
+      format("woff2"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/624479380cc74e84e3b1a17d_Telegraf-Light.eot")
+      format("embedded-opentype"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/624479385d971c00ebadb068_Telegraf-Light.woff")
+      format("woff"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/62447938efd690f95020c5c4_Telegraf-Light.ttf")
+      format("truetype"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/6220458cc218fdc8a03063ad_Telegraf-Light.otf")
+      format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Telegraf;
+  src:
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/6244793831ba437759d8a3b2_Telegraf-Medium.woff2")
+      format("woff2"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/6244793879c63cf6c2eb8f84_Telegraf-Medium.eot")
+      format("embedded-opentype"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/62447938c5172211fc93e295_Telegraf-Medium.woff")
+      format("woff"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/6244793873c6764acd286263_Telegraf-Medium.ttf")
+      format("truetype"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/622027ebc92d1fa8d925a103_Telegraf-Medium.otf")
+      format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Telegraf;
+  src:
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/62447938a56f68d1535f84c1_Telegraf-Regular.woff2")
+      format("woff2"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/62447938dcb5142bbca78626_Telegraf-Regular.eot")
+      format("embedded-opentype"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/62447938a977a21682f323eb_Telegraf-Regular.woff")
+      format("woff"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/624479387d87a1a6d1ce9f65_Telegraf-Regular.ttf")
+      format("truetype"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/622027ebd0cb58f8bad07f47_Telegraf-Regular.otf")
+      format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Telegraf;
+  src:
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/624479388057a91f4773171d_Telegraf-SemiBold.woff2")
+      format("woff2"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/62447938e8505d7a2dc3ab9c_Telegraf-SemiBold.eot")
+      format("embedded-opentype"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/624479386bb9246058b720e1_Telegraf-SemiBold.woff")
+      format("woff"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/62447938dcb5144b9ba78627_Telegraf-SemiBold.ttf")
+      format("truetype"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/622027ebb1908f3f96b69eb3_Telegraf-SemiBold.otf")
+      format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Telegraf;
+  src:
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/62447939ed19924b94f301c3_Telegraf-UltraLight.woff2")
+      format("woff2"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/6244793fa5e5763297057be2_Telegraf-UltraLight.eot")
+      format("embedded-opentype"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/6244793922a281024bd7255f_Telegraf-UltraLight.woff")
+      format("woff"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/62447939973b473c3f94d94b_Telegraf-UltraLight.ttf")
+      format("truetype"),
+    url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/6220313f0d547caf9a68f4fe_Telegraf-UltraLight.otf")
+      format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Telegraf variable;
+  src: url("https://cdn.prod.website-files.com/61bc21e3a843412266a08eb3/6220458c6243627d2a92e66a_Telegraf-Variable.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(0.97 0.012 85);
+  --foreground: oklch(0.28 0.04 260);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.28 0.04 260);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.28 0.04 260);
+  --primary: oklch(0.58 0.16 35);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.94 0.02 85);
+  --secondary-foreground: oklch(0.32 0.04 260);
+  --muted: oklch(0.94 0.015 85);
+  --muted-foreground: oklch(0.48 0.03 260);
+  --accent: oklch(0.92 0.05 160);
+  --accent-foreground: oklch(0.3 0.06 160);
+  --destructive: oklch(0.55 0.2 25);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.9 0.02 85);
+  --input: oklch(0.9 0.02 85);
+  --ring: oklch(0.58 0.16 35);
+  --chart-1: oklch(0.65 0.14 35);
+  --chart-2: oklch(0.55 0.12 160);
+  --chart-3: oklch(0.5 0.1 260);
+  --chart-4: oklch(0.7 0.12 85);
+  --chart-5: oklch(0.6 0.15 35);
+  --sidebar: oklch(0.98 0.01 85);
+  --sidebar-foreground: oklch(0.28 0.04 260);
+  --sidebar-primary: oklch(0.58 0.16 35);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+  --sidebar-accent: oklch(0.94 0.02 85);
+  --sidebar-accent-foreground: oklch(0.28 0.04 260);
+  --sidebar-border: oklch(0.9 0.02 85);
+  --sidebar-ring: oklch(0.58 0.16 35);
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", ui-serif, Georgia, serif;
+  --font-mono: ui-monospace, "Cascadia Code", monospace;
+  --radius: 1rem;
+  --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+  --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+  --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+  --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+  --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
+  --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
+  --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 8px 10px -1px hsl(0 0% 0% / 0.1);
+  --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --font-serif: var(--font-serif);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --shadow-2xs: var(--shadow-2xs);
+  --shadow-xs: var(--shadow-xs);
+  --shadow-sm: var(--shadow-sm);
+  --shadow: var(--shadow);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
+  --shadow-2xl: var(--shadow-2xl);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+  button {
+    cursor: pointer;
+  }
+}
+
+/* Warm light shell — editorial / consumer fintech (not dark-tech) */
+.app-shell {
+  font-family: var(--font-sans);
+  color: var(--foreground);
+  background-color: var(--background);
+  background-image:
+    radial-gradient(ellipse 120% 80% at 0% -30%, oklch(0.93 0.07 145 / 0.55), transparent 55%),
+    radial-gradient(ellipse 90% 70% at 100% 0%, oklch(0.94 0.08 45 / 0.4), transparent 50%),
+    radial-gradient(ellipse 70% 50% at 80% 100%, oklch(0.92 0.05 260 / 0.25), transparent 45%);
+  background-attachment: fixed;
+}
+
+.font-display {
+  font-family: var(--font-serif);
+}
+
+/* Surfaces: cards, fields, labels (name kept for fewer file edits) */
+@layer components {
+  .protocol-card {
+    border-radius: 1.25rem;
+    border: 1px solid oklch(0.9 0.02 85);
+    background: oklch(1 0 0);
+    box-shadow:
+      0 2px 4px -1px oklch(0.45 0.02 260 / 0.06),
+      0 10px 28px -10px oklch(0.4 0.03 260 / 0.1);
+  }
+
+  .protocol-field {
+    border-radius: 0.75rem;
+    border: 1px solid oklch(0.9 0.02 85);
+    background-color: oklch(0.985 0.008 85);
+    color: oklch(0.25 0.04 260);
+  }
+
+  .protocol-field::placeholder {
+    color: oklch(0.62 0.02 260);
+  }
+
+  .protocol-label {
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: none;
+    color: oklch(0.45 0.03 260);
+  }
+
+  .protocol-section-title {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    text-transform: none;
+    color: oklch(0.28 0.04 260);
+  }
+
+  .protocol-page-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid oklch(0.9 0.02 85);
+    background-color: oklch(0.97 0.012 85 / 0.88);
+    backdrop-filter: blur(14px);
+  }
+}
+
+@layer utilities {
+  .loading-spinner {
+    -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjQnIGhlaWdodD0nMjQnIHN0cm9rZT0nIzAwMCcgdmlld0JveD0nMCAwIDI0IDI0JyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxzdHlsZT4uc3Bpbm5lcl9WOG0xe3RyYW5zZm9ybS1vcmlnaW46Y2VudGVyO2FuaW1hdGlvbjpzcGlubmVyX3pLb2EgMnMgbGluZWFyIGluZmluaXRlfS5zcGlubmVyX1Y4bTEgY2lyY2xle3N0cm9rZS1saW5lY2FwOnJvdW5kO2FuaW1hdGlvbjpzcGlubmVyX1lwWlMgMS41cyBlYXNlLW91dCBpbmZpbml0ZX1Aa2V5ZnJhbWVzIHNwaW5uZXJfektvYXsxMDAle3RyYW5zZm9ybTpyb3RhdGUoMzYwZGVnKX19QGtleWZyYW1lcyBzcGlubmVyX1lwWlN7MCV7c3Ryb2tlLWRhc2hhcnJheTowIDE1MDtzdHJva2UtZGFzaG9mZnNldDowfTQ3LjUle3N0cm9rZS1kYXNoYXJyYXk6NDIgMTUwO3N0cm9rZS1kYXNob2Zmc2V0Oi0xNn05NSUsMTAwJXtzdHJva2UtZGFzaGFycmF5OjQyIDE1MDtzdHJva2UtZGFzaG9mZnNldDotNTl9fTwvc3R5bGU+PGcgY2xhc3M9J3NwaW5uZXJfVjhtMSc+PGNpcmNsZSBjeD0nMTInIGN5PScxMicgcj0nOS41JyBmaWxsPSdub25lJyBzdHJva2Utd2lkdGg9JzMnPjwvY2lyY2xlPjwvZz48L3N2Zz4=);
+    mask-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjQnIGhlaWdodD0nMjQnIHN0cm9rZT0nIzAwMCcgdmlld0JveD0nMCAwIDI0IDI0JyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxzdHlsZT4uc3Bpbm5lcl9WOG0xe3RyYW5zZm9ybS1vcmlnaW46Y2VudGVyO2FuaW1hdGlvbjpzcGlubmVyX3pLb2EgMnMgbGluZWFyIGluZmluaXRlfS5zcGlubmVyX1Y4bTEgY2lyY2xle3N0cm9rZS1saW5lY2FwOnJvdW5kO2FuaW1hdGlvbjpzcGlubmVyX1lwWlMgMS41cyBlYXNlLW91dCBpbmZpbml0ZX1Aa2V5ZnJhbWVzIHNwaW5uZXJfektvYXsxMDAle3RyYW5zZm9ybTpyb3RhdGUoMzYwZGVnKX19QGtleWZyYW1lcyBzcGlubmVyX1lwWlN7MCV7c3Ryb2tlLWRhc2hhcnJheTowIDE1MDtzdHJva2UtZGFzaG9mZnNldDowfTQ3LjUle3N0cm9rZS1kYXNoYXJyYXk6NDIgMTUwO3N0cm9rZS1kYXNob2Zmc2V0Oi0xNn05NSUsMTAwJXtzdHJva2UtZGFzaGFycmF5OjQyIDE1MDtzdHJva2UtZGFzaG9mZnNldDotNTl9fTwvc3R5bGU+PGcgY2xhc3M9J3NwaW5uZXJfVjhtMSc+PGNpcmNsZSBjeD0nMTInIGN5PScxMicgcj0nOS41JyBmaWxsPSdub25lJyBzdHJva2Utd2lkdGg9JzMnPjwvY2lyY2xlPjwvZz48L3N2Zz4=);
+  }
+
+  .loading {
+    pointer-events: none;
+    display: inline-block;
+    aspect-ratio: 1 / 1;
+    width: 1.25em;
+    background-color: currentColor;
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjQnIGhlaWdodD0nMjQnIHN0cm9rZT0nIzAwMCcgdmlld0JveD0nMCAwIDI0IDI0JyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxzdHlsZT4uc3Bpbm5lcl9WOG0xe3RyYW5zZm9ybS1vcmlnaW46Y2VudGVyO2FuaW1hdGlvbjpzcGlubmVyX3pLb2EgMnMgbGluZWFyIGluZmluaXRlfS5zcGlubmVyX1Y4bTEgY2lyY2xle3N0cm9rZS1saW5lY2FwOnJvdW5kO2FuaW1hdGlvbjpzcGlubmVyX1lwWlMgMS41cyBlYXNlLW91dCBpbmZpbml0ZX1Aa2V5ZnJhbWVzIHNwaW5uZXJfektvYXsxMDAle3RyYW5zZm9ybTpyb3RhdGUoMzYwZGVnKX19QGtleWZyYW1lcyBzcGlubmVyX1lwWlN7MCV7c3Ryb2tlLWRhc2hhcnJheTowIDE1MDtzdHJva2UtZGFzaG9mZnNldDowfTQ3LjUle3N0cm9rZS1kYXNoYXJyYXk6NDIgMTUwO3N0cm9rZS1kYXNob2Zmc2V0Oi0xNn05NSUsMTAwJXtzdHJva2UtZGFzaGFycmF5OjQyIDE1MDtzdHJva2UtZGFzaG9mZnNldDotNTl9fTwvc3R5bGU+PGcgY2xhc3M9J3NwaW5uZXJfVjhtMSc+PGNpcmNsZSBjeD0nMTInIGN5PScxMicgcj0nOS41JyBmaWxsPSdub25lJyBzdHJva2Utd2lkdGg9JzMnPjwvY2lyY2xlPjwvZz48L3N2Zz4=);
+    mask-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjQnIGhlaWdodD0nMjQnIHN0cm9rZT0nIzAwMCcgdmlld0JveD0nMCAwIDI0IDI0JyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxzdHlsZT4uc3Bpbm5lcl9WOG0xe3RyYW5zZm9ybS1vcmlnaW46Y2VudGVyO2FuaW1hdGlvbjpzcGlubmVyX3pLb2EgMnMgbGluZWFyIGluZmluaXRlfS5zcGlubmVyX1Y4bTEgY2lyY2xle3N0cm9rZS1saW5lY2FwOnJvdW5kO2FuaW1hdGlvbjpzcGlubmVyX1lwWlMgMS41cyBlYXNlLW91dCBpbmZpbml0ZX1Aa2V5ZnJhbWVzIHNwaW5uZXJfektvYXsxMDAle3RyYW5zZm9ybTpyb3RhdGUoMzYwZGVnKX19QGtleWZyYW1lcyBzcGlubmVyX1lwWlN7MCV7c3Ryb2tlLWRhc2hhcnJheTowIDE1MDtzdHJva2UtZGFzaG9mZnNldDowfTQ3LjUle3N0cm9rZS1kYXNoYXJyYXk6NDIgMTUwO3N0cm9rZS1kYXNob2Zmc2V0Oi0xNn05NSUsMTAwJXtzdHJva2UtZGFzaGFycmF5OjQyIDE1MDtzdHJva2UtZGFzaG9mZnNldDotNTl9fTwvc3R5bGU+PGcgY2xhc3M9J3NwaW5uZXJfVjhtMSc+PGNpcmNsZSBjeD0nMTInIGN5PScxMicgcj0nOS41JyBmaWxsPSdub25lJyBzdHJva2Utd2lkdGg9JzMnPjwvY2lyY2xlPjwvZz48L3N2Zz4=);
+  }
+}

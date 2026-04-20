@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+
+# Environment (never commit secrets)
+.env
+.env.local
+.env.*.local
+**/.env
+!**/.env.example
+*.pem
+secrets/
+
+# Build outputs
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Test / coverage
+coverage/
+.nyc_output/
+htmlcov/
+
+# Vite
+**/node_modules/.vite
+
+# Hardhat / Solidity
+contracts/artifacts/
+contracts/cache/
+contracts/coverage/
+contracts/typechain-types/
+
+# Logs & OS
+*.log
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.cache/
+
+# IDE & local tooling
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Cursor (local agent state; keep team rules in-repo if you add them under .cursor/rules)
+.cursor/projects/
+.cursor/*.log
+
+# Vercel
+.vercel
+
+# Misc
+*.pid
+.turbo
+pnpm-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

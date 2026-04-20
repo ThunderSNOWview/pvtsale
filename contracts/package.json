@@ -1,0 +1,29 @@
+{
+  "name": "pvtsale-contracts",
+  "version": "1.0.0",
+  "description": "pvtsale confidential launchpad contracts (CoFHE)",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "REPORT_GAS=true hardhat test",
+    "clean": "rimraf ./artifacts ./cache ./coverage ./types",
+    "deploy:factory": "hardhat run scripts/deploy-factory.ts --network eth-sepolia",
+    "eth-sepolia:deploy": "npm run deploy:factory"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@fhenixprotocol/cofhe-contracts": "^0.1.3",
+    "@cofhe/hardhat-plugin": "^0.4.0",
+    "@cofhe/sdk": "^0.4.0",
+    "@cofhe/mock-contracts": "^0.4.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.4.0",
+    "hardhat": "^2.22.19",
+    "ts-node": ">=8.0.0",
+    "typescript": ">=4.5.0"
+  }
+}
