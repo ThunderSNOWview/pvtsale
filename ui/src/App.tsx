@@ -22,8 +22,8 @@ export default function App() {
         <StatsBar />
         <main className="max-w-320 mx-auto w-full flex-1 px-4 sm:px-6 lg:px-8 pb-16">
           <Routes>
-            <Route path="/" element={<Navigate to="/create" replace />} />
-            <Route path="/home" element={<HomeView />} />
+            <Route path="/" element={<HomeView />} />
+            <Route path="/home" element={<Navigate to="/" replace />} />
             <Route path="/raises" element={<BrowseRaisesView />} />
             <Route path="/portfolio" element={<PortfolioView />} />
             <Route path="/launchpad/:id" element={<PresaleView />} />

@@ -11,7 +11,7 @@ export const navConfig: TNavConfig[] = [
   {
     id: "home",
     label: "Home",
-    href: "/home",
+    href: "/",
     Icon: Home,
   },
   {
