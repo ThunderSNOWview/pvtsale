@@ -89,7 +89,7 @@ export default function DocsView() {
               per-wallet min/max, liquidity %, and schedule — see in-form tooltips.
             </p>
             <p className="pt-2">
-              <Link to="/create" className="font-medium text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">
+              <Link to="/create-launchpad" className="font-medium text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">
                 Open create presale
               </Link>
             </p>

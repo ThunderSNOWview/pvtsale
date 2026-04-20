@@ -4,5 +4,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "installCommand": "npm install",
+  "redirects": [{ "source": "/", "destination": "/create", "permanent": false }],
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }

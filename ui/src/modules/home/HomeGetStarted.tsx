@@ -31,7 +31,7 @@ export default function HomeGetStarted() {
                 </Link>
               </Button>
               <Button asChild variant="outline" className="w-full sm:w-auto border-stone-200">
-                <Link to="/create">
+                <Link to="/create-launchpad">
                   New presale
                   <ArrowRight className="size-4" />
                 </Link>

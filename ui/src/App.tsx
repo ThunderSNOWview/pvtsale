@@ -23,11 +23,11 @@ export default function App() {
         <main className="max-w-320 mx-auto w-full flex-1 px-4 sm:px-6 lg:px-8 pb-16">
           <Routes>
             <Route path="/" element={<HomeView />} />
-            <Route path="/home" element={<Navigate to="/" replace />} />
+            <Route path="/home" element={<Navigate to="/create" replace />} />
+            <Route path="/create" element={<HomeView />} />
             <Route path="/raises" element={<BrowseRaisesView />} />
             <Route path="/portfolio" element={<PortfolioView />} />
             <Route path="/launchpad/:id" element={<PresaleView />} />
-            <Route path="/create" element={<CreateLaunchpadView />} />
             <Route path="/create-launchpad" element={<CreateLaunchpadView />} />
             <Route path="/create-token" element={<CreateTokenView />} />
             <Route path="/docs" element={<DocsView />} />
